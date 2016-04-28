@@ -25,7 +25,9 @@ import json
 import re,datetime
 import sys
 import MySQLdb
+import os
 
+token=os.environ["AUTH_TOKEN"]
 db = MySQLdb.connect(host="us-cdbr-iron-east-03.cleardb.net",    # your host, usually localhost
                      user="b4041f462a1916",         # your username
                      passwd="a842671f",  # your password
@@ -55,7 +57,6 @@ def secs(d0):
   return delta.total_seconds()
  
 def dump1(u,issues):
-  token = "TOKEN HERE" # <===
   request = urllib2.Request(u, headers={"Authorization" : "token "+token})
   v = urllib2.urlopen(request).read()
   w = json.loads(v)
