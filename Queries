@@ -14,14 +14,10 @@ select count(*),user from commits group by user;
 select date(time, 'unixepoch', 'localtime'),count(id) from commits group by date(time, 'unixepoch', 'localtime');
 select user, time from commits where user="group1/user4"; change for each user
 select count(*),user from commits group by user;
-
 select user, count(id) from milestone group by user;
-
 select id as MILESTONE,  date(created_at, 'unixepoch', 'localtime') as CREATION_TIME , case when closed_at is not null then (closed_at-created_at)/86400 else (strftime('%s','now')-created_at)/86400 end, date(closed_at, 'unixepoch', 'localtime') from milestone;
-
 select count(id) from milestone where closed_at < due_at;
 select id from event INNER JOIN milestone where event.milestone=milestone.id and event.label='closed' and event.time > milestone.closed_at;
 select count(*) from labels;
 select label, count(issueID) from event where action="labeled" group by label;
 "select result/cast((select count(*) from labels)as float) from (select count(name) as result from labels where name not in (select label from event where action=""labeled"" group by label having count(issueID)>0)) test;
-"
