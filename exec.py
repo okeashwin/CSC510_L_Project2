@@ -1,6 +1,5 @@
 import os
 import sys
-import ConfigParser
 
 def runQueries(repoID,targetDir):
 	os.chdir(targetDir)
@@ -9,6 +8,26 @@ def runQueries(repoID,targetDir):
 	for query in queries:
 		os.system("sqlite3 -csv group"+str(repoID)+".db \""+query+"\" > ./result_"+str(queryID)+".csv")
 		queryID+=1
+	os.chdir("../")
+
+def pushData(repoID):
+	targetDir="./Group"+str(repoID)+"Data"
+	dataDir="../Group"+str(repoID)+"Results"
+	os.mkdir(targetDir)
+	os.chdir(targetDir)
+
+	#issue dump
+	print("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from issue;\" > issues.csv")
+	os.system("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from issue;\" > issues.csv")
+	#milestone dump
+	os.system("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from milestone;\" > milestones.csv")
+	#labels dump
+	os.system("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from labels;\" > labels.csv")
+	#event
+	os.system("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from event;\" > event.csv")
+	# commits dump
+	os.system("sqlite3 -header -csv "+dataDir+"/group"+str(repoID)+".db \"select * from commits;\" > commits.csv")
+
 	os.chdir("../")
 
 def execute():
@@ -34,6 +53,9 @@ def execute():
 	os.system("rm -rf ./Group1Results")
 	os.system("rm -rf ./Group2Results")
 	os.system("rm -rf ./Group3Results")
+	os.system("rm -rf ./Group1Data")
+	os.system("rm -rf ./Group2Data")
+	os.system("rm -rf ./Group3Data")
 	os.mkdir("./Group1Results")
 	os.mkdir("./Group2Results")
 	os.mkdir("./Group3Results")
@@ -49,6 +71,7 @@ def execute():
 			print("Failed with exit code : "+str(returnValue))
 			print("------- Failed for Group "+str(repoID)+"---------")
 
+		pushData(repoID)
 		runQueries(repoID,targetDir)
 		repoID+=1
 
