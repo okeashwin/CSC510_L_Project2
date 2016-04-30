@@ -20,4 +20,4 @@ select count(id) from milestone where closed_at < due_at;
 select id from event INNER JOIN milestone where event.milestone=milestone.id and event.label='closed' and event.time > milestone.closed_at;
 select count(*) from labels;
 select label, count(issueID) from event where action="labeled" group by label;
-"select result/cast((select count(*) from labels)as float) from (select count(name) as result from labels where name not in (select label from event where action=""labeled"" group by label having count(issueID)>0)) test;
+select result/cast((select count(*) from labels)as float) from (select count(name) as result from labels where name not in (select label from event where action=""labeled"" group by label having count(issueID)>0)) test;
