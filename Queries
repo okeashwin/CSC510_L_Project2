@@ -1,0 +1,27 @@
+select count(*) from issue where milestone_id is null;
+select count(*) from issue where closedtime is null;
+Select count(*) from issue where (closedtime-createtime)/86400 < 2 OR (closedtime-createtime)/86400 > 16;
+Select user,count(Distinct(issueID)) from Event group By user;
+Select count(Distinct(issueID)) from Event where action == "assigned";
+Select label,count(issueID) from Event where action == "assigned" group by label;
+Select count(distinct(issueID)) from Event where action = "labeled";
+select count(*) from Event where action = "labeled";  divide by Select count(distinct(issueID)) from Event where action = "labeled";
+Select issueID, count(*) from Comment group by issueID;
+select count(*) from issue where id not in (select distinct issueID from comment);
+select user,count(*) from comment group by user;
+select * from event where action="labeled" and label="bug";
+select count(*),user from commits group by user;
+select date(time, 'unixepoch', 'localtime'),count(id) from commits group by date(time, 'unixepoch', 'localtime');
+select user, time from commits where user="group1/user4"; change for each user
+select count(*),user from commits group by user;
+
+select user, count(id) from milestone group by user;
+
+select id as MILESTONE,  date(created_at, 'unixepoch', 'localtime') as CREATION_TIME , case when closed_at is not null then (closed_at-created_at)/86400 else (strftime('%s','now')-created_at)/86400 end, date(closed_at, 'unixepoch', 'localtime') from milestone;
+
+select count(id) from milestone where closed_at < due_at;
+select id from event INNER JOIN milestone where event.milestone=milestone.id and event.label='closed' and event.time > milestone.closed_at;
+select count(*) from labels;
+select label, count(issueID) from event where action="labeled" group by label;
+"select result/cast((select count(*) from labels)as float) from (select count(name) as result from labels where name not in (select label from event where action=""labeled"" group by label having count(issueID)>0)) test;
+"
