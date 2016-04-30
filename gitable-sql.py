@@ -267,6 +267,30 @@ def dumpIs(u,issues,token):
     print("Contact TA")
     return False
 
+def labelDump(u, labels, token):
+  try:
+    request = urllib2.Request(u, headers={"Authorization" : "token "+token})
+    v = urllib2.urlopen(request).read()
+    w = json.loads(v)
+    if not w or ('message' in w and w['message'] == "Not Found"): return False
+    labelID=0
+    for label in w:
+      labelName=label['name']
+      labelObj= L(id=labelID, name=labelName)
+      labels.append(labelObj)
+      labelID+=1
+    return True    
+  except urllib2.HTTPError as e:
+    if e.code != 404:
+      print(e)
+      print("404 Contact TA")
+    return False
+  except Exception as e:
+    print(u)
+    print(e)
+    print("other Contact TA")
+    return False
+
 def launchDump():
   if os.path.isfile("./gitable.conf"):
     config = ConfigParser.ConfigParser()
@@ -318,6 +342,12 @@ def launchDump():
   conn.execute('''CREATE TABLE IF NOT EXISTS commits(id INTEGER NOT NULL, time DATETIME NOT NULL, sha VARCHAR(128),
         user VARCHAR(128), message VARCHAR(128),
         CONSTRAINT pk_commits PRIMARY KEY (id) ON CONFLICT ABORT)''')
+
+  conn.execute('''CREATE TABLE IF NOT EXISTS labels(id INTEGER, name VARCHAR(128),
+        CONSTRAINT pk_issue PRIMARY KEY (id) ON CONFLICT ABORT)''')
+
+  labels=[]
+
   nameNum = 1
   nameMap = dict()
 
@@ -370,6 +400,24 @@ def launchDump():
   commentTuples = []
   commitTuples = []
 
+  # Get labels dump
+  labels=[]
+  label_url='https://api.github.com/repos/'+repo+'/labels?state=all'
+  print("Retrieving labels for this repo")
+  labelDump(label_url,labels,token)
+  print("Received "+str(len(labels))+" labels from the repo")
+  labelTuples=[]
+  for label in labels:
+    labelTuples.append([label.id, label.name])
+  # Label dump over
+
+  try:
+    if len(labels) > 0:
+      conn.executemany('INSERT INTO labels VALUES (?,?)', labelTuples)
+      conn.commit()
+      print('committed labels')
+  except sqlite3.Error as er:
+    print(er)
 
   for milestone in milestones:
     if not milestone.user in nameMap:
