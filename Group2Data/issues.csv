@@ -1,0 +1,99 @@
+id,name,createtime,closedtime,milestone_id,assignee_id,label_str,labels_count
+1,"Added a docx file, members will work on this file to create the FEB 1…",1452293462,1452293485,,,"",0
+2,"Feb 1 deliverable - Proposal document",1454291127,1454291136,,,"",0
+3,"comments, no grade (yet)",1454343999,1454384481,,,"proj1 feedback,",1
+4,"Team meeting to define Roadmap for the March deliverables",1455048316,1455117246,,,"group work,",1
+5,"Study/Search on feasibility of using android.",1455128839,1455155913,1573389,15067420,"feasibilty study,Mar1,",2
+6,"Study on creating databases for this solution with efficient Interfaces",1455129033,1456185788,1573425,787529,"feasibilty study,Mar1,",2
+7,"Come up with technologies to be used and do feasibility check",1455129175,1455430001,1573425,12735833,"feasibilty study,Mar1,",2
+8,"Deploy Infrastructure for Solution 2",1455129355,1455430079,1573425,12735833,"feature,Mar1,",2
+9,"Create new branch for the project",1455129431,1455162417,1573425,12735833,"feature,Mar1,",2
+10,"Demo on database design ",1455129495,1455223434,1573425,15067420,"feature,",1
+11,"Technologies to be used for the solution 3",1455129550,1456197877,1573396,13955480,"feasibilty study,",1
+12,"Define project folder structure and running maven project in java",1455129575,1455430034,1573425,12735833,"feature,Mar1,",2
+13,"Create New Branch for the project: solution 3",1455129802,1455201090,1573396,13955480,"",0
+14,"Plan/discuss reusability of code modules for various solutions.",1455201402,1456197823,1573396,13955480,"feasibilty study,",1
+15,"Adding docs for research",1455201829,1456197623,1573396,13955480,"research,",1
+16,"added a database connection module",1455426462,1455476330,,,"",0
+17,"Start implementing validator class",1455430196,1456612094,1573425,12735833,"feature,Mar1,",2
+18,"Create dummy dataset for implementation",1455430332,1456612062,1573425,12735833,"enhancement,Mar1,",2
+19,"Move Solution2 files to a new directory named Solution2",1455656982,1456164618,1573425,12735833,"help wanted,",1
+20,"Achieve Milestone - Solution 1 testing iteration 1",1455658283,1456625014,1573389,15067420,"feature,",1
+21,"Achieve Milestone - Solution 1 design iteration 1",1455658326,1456625039,1573389,15067420,"feature,",1
+22,"Achieve Milestone - Solution 1 development iteration 1",1455658443,1456625057,1573389,15067420,"feature,",1
+23,"Achieve Milestone - Solution 1 design iteration 2",1455658485,1456724670,1573389,15067420,"feature,",1
+24,"Achieve Milestone - Solution 1 development iteration 2",1455658525,1456724688,1573389,15067420,"feature,",1
+25,"Achieve Milestone - Solution 1 testing iteration 2",1455658565,1456724703,1573389,15067420,"feature,",1
+26,"Design initial Android Project structure",1455659194,1455662923,1586913,15067420,"feature,",1
+27,"Develop initial Android Project Structure",1455659230,1455662943,1586923,15067420,"feature,",1
+28,"Test initial Android Project Structure",1455659257,1455662987,1586956,15067420,"feature,",1
+29,"initial structure for Solution1 Android App",1455662100,1455662760,,,"",0
+30,"Configure the log-in table and requirement table for one course.",1455987162,1456203040,1573425,787529,"feasibilty study,Mar1,",2
+31,"Implement Log-in module for Solution two.",1455987268,1456164514,1573425,13955480,"feature,Mar1,",2
+32,"Integrate DB code with UI and Log-in module.",1455987312,1456164573,1573425,12735833,"feature,Mar1,",2
+33,"Database Helper Class",1456163052,1456303997,1594872,787529,"feature,Mar1,",2
+34,Solution2,1456163772,1456163787,,,"",0
+35,Solution2,1456164419,1456164431,,,"",0
+36,"Create and apply css for web pages",1456164793,1456612158,1573425,12735833,"enhancement,Mar1,",2
+37,"Place grid and navigation menu bar in main page",1456164859,1456612138,1573425,12735833,"feature,Mar1,",2
+38,"Implement SignUp and Log out module for Solution 2",1456164917,1456612022,1573425,12735833,"feature,Mar1,",2
+39,"Implement general UI Widgets that can be used across web pages in project.",1456165000,1456611983,1573425,12735833,"enhancement,Mar1,",2
+40,"Implement GenerateReport class for fetching results",1456165125,1456689110,1573425,12735833,"feature,Mar1,",2
+41,"Deploy and Test the application on different platform",1456165184,1459961139,1594872,12735833,"enhancement,Mar1,",2
+42,"Enlist features required",1456206696,1456378900,1599004,13955480,"feature,",1
+43,"Building paper prototype",1456206800,1456378588,1599004,13955480,"feature,",1
+44,"Finalizing design for iteration 1",1456206850,1456764720,1599004,13955480,"feature,",1
+45,"Create basic structure",1456210698,1456379840,1599014,13955480,"feature,",1
+46,"Database for Master of Science track",1456236784,1456252335,1573425,787529,"feature,Mar1,",2
+47,"Database for MCS - Software Engineering track",1456236843,1456882840,1573425,787529,"feature,Mar1,",2
+48,"Database for MCS - Data Science ",1456237133,1456834424,1573425,787529,"feature,Mar1,",2
+49,"Database for MS in CN",1456237272,1456834416,1573425,787529,"feature,Mar1,",2
+50,"Angelyn patch 1",1456243030,1456243046,,,"",0
+51,"Added files via upload",1456286216,1456286222,,,"",0
+52,Solution2,1456286300,1456286305,,,"",0
+53,"Angelyn patch 1",1456304264,1456304270,,,"",0
+54,Solution2,1456304774,1456304782,1594872,787529,"Mar1,",1
+55,"Implimenting boxed TD",1456379963,1456767503,1599014,13955480,"feature,",1
+56,"Create main activity",1456624874,1456627715,1586955,15067420,"feature,",1
+57,"implement my acc activity",1456627697,1456635768,1586955,15067420,"feature,",1
+58,"implement miscellaneous requirement in Grad App lite",1456635427,1456686612,1586955,15067420,"feature,",1
+59,"Implement degree activity in grad app lite",1456636075,1456642753,1586955,15067420,"feature,",1
+60,"Implement seminar activity",1456653822,1456657176,1586955,15067420,"feature,",1
+61,"Implement view seminar activity",1456657233,1456663575,1586955,15067420,"feature,",1
+62,"implement semester activity ",1456686587,1456692321,1586955,15067420,"feature,",1
+63,"Merging solution two final changes in Master",1456688624,1456689043,,,"",0
+64,"Implement status activity",1456692272,1456699196,1586955,15067420,"feature,",1
+65,"implement logging",1456692300,1456723892,1586955,15067420,"feature,",1
+66,"Test my acc activity",1456724083,1456724496,1586957,15067420,"feature,",1
+67,"Test degree activity",1456724162,1456724514,1586957,15067420,"feature,",1
+68,"Test Courses activity",1456724198,1456724534,1586957,15067420,"feature,",1
+69,"Test seminar activity",1456724241,1456724557,1586957,15067420,"feature,",1
+70,"Test miscellaneous requirement checklist",1456724287,1456724584,1586957,15067420,"feature,",1
+71,"Test status activity",1456724340,1456724604,1586957,15067420,"feature,",1
+72,"Test log file",1456724389,1456724620,1586957,15067420,"feature,",1
+73,"Deciding on how to get grades of student for this solution",1456765826,1456767420,1599004,13955480,"feasibilty study,",1
+74,"Implimenting getting courses taken in past-grades-courses enrolled ",1456765941,1456767926,1599014,13955480,"feature,",1
+75,"Implimenting calc GPA ",1456766011,1456767988,1599014,13955480,"feature,",1
+76,"Impliment the functionality to show Maximum/taken/remaining requirements",1456767154,1456767978,1599014,13955480,"feature,",1
+77,"Test: GPA functionality",1456768168,1456808397,1599072,13955480,"test,",1
+78,"Test: choosing subjects, adding enrolled status,etc",1456768315,1456808407,1599072,13955480,"test,",1
+79,Solution3,1456805824,1456834465,,,"",0
+80,"Add miscellaneou features",1456808369,1456808377,1599014,13955480,"feature,",1
+81,"Test: seminar requirements",1456808864,1456808870,1599072,13955480,"test,",1
+82,"Test graduation checklist functionality",1456808938,1456808943,1599072,13955480,"test,",1
+83,"Update Readme file",1456875755,1456878029,1616657,13955480,"",0
+84,"Review README",1456878850,1456883634,1616657,15067420,"Mar1,",1
+85,"Creating survey for Solution1",1456881239,1459984677,1616760,15067420,"Evaluation Plan,",1
+86,"Creating survey for Solution2",1456881299,1459961174,1616760,12735833,"Evaluation Plan,",1
+87,"creating survey for Solution3",1456881337,1459965738,1616760,787529,"Evaluation Plan,",1
+88,"creating survey for comparing Solution1 vs Solution2 vs Solution3",1456881375,1459984547,1616760,787529,"Evaluation Plan,",1
+89,"Observing Users using Solution1",1456881503,,1616768,15067420,"Evaluation Plan,",1
+90,"Observing Users using Solution2",1456881546,1459965476,1616768,787529,"Evaluation Plan,",1
+91,"Observing Users using Solution3",1456881579,1459981582,1616768,13955480,"Evaluation Plan,",1
+92,"conducting surveys for Solution1",1456881675,,1616776,15067420,"Evaluation Plan,",1
+93,"conducting surveys for Solution2",1456881706,1459961189,1616776,12735833,"Evaluation Plan,",1
+94,"conducting surveys for Solution3",1456881729,1459983073,1616776,13955480,"Evaluation Plan,",1
+95,"Analyzing survey outcomes",1456881805,,1616779,787529,"Evaluation Plan,",1
+96,"Analyzing logs",1456881823,1459984648,1616779,15067420,"Evaluation Plan,",1
+97,Concluding,1456881869,,1616779,15067420,"Evaluation Plan,",1
+98,"April deliverable: Report",1459981778,,1616779,15067420,"group work,",1

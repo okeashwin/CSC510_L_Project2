@@ -1,0 +1,57 @@
+id,name,createtime,closedtime,milestone_id,assignee_id,label_str,labels_count
+1,"Identification of solutions to automate manual entry of expenses",1454709651,1455655801,1567308,,"solution_manual_interface,",1
+2,"Feb 1 Report",1454710353,1454710388,1567295,,"",0
+3,"Decide on the android SDK version",1454714126,1455292669,1567306,,"android,",1
+4,"Decide on java version",1454714199,1454806812,1567306,,"android,",1
+5,"Setting up the environment for web-application",1454976132,1455294877,1567306,5220965,"web-application,",1
+6,"Django project intialization",1455054751,1455294218,1571640,5220965,"web-application,",1
+7,"Create User model ",1455055113,1455420735,1571640,5220965,"models,web-application,",2
+8,"Create the Expense model.",1455055175,1456603053,1571640,5220965,"models,web-application,",2
+9,"Create an application expense_sharing in the django project",1455055809,1455727862,1571640,,"web-application,",1
+10,"Android Studio Setup",1455060239,1455727321,1567306,,"",0
+11,"Java  version not compatible with the Android Developer studio",1455174271,1456603674,,,"android,",1
+12,"Basic image clicking android app",1455227967,1456882563,,14164383,"android,",1
+13,"Android Emulator not getting started ",1455230903,1455390450,1567306,,"",0
+14,"Implementation of the manual interface to be created for the expense sharing application",1455390639,1456621486,1567308,,"solution_manual_interface,",1
+15,"Basic SMS feed application",1455403961,1455741504,1567328,11071092,"",0
+16,"Merging to master from web-app.",1455420605,1455420617,,,"",0
+17,"Authentication using REST API",1455428380,1455738731,1588908,5220965,"REST API,web-application,",2
+18,"API for adding a new expense",1455438141,1455738648,1588908,5220965,"REST API,web-application,",2
+19,"API for viewing all the user expenses.",1455729003,1455737347,1588908,5220965,"REST API,web-application,",2
+20,"API to show expense details",1455736048,1455737312,1588908,5220965,"REST API,web-application,",2
+21,"API to delete an expense.",1455738837,1456892723,1588908,5220965,"REST API,web-application,",2
+22,"API to update an expense",1455739124,1456892716,1588908,5220965,"REST API,web-application,",2
+23,"Refined search to display SMSes of interest",1455739979,1456600828,1567328,11071092,"android,solution_:_smsFeed,",2
+24,"Need to figure out apis that can be used to convert image to text",1455750641,1456624322,,,"",0
+25,"The functionality to be added for the Next button. ",1455754243,1456599838,1577084,,"solution_manual_interface,",1
+26,"Invalid amounts should not be propagated upon clicking Next",1455769067,1456599803,1577084,,"solution_manual_interface,",1
+27,"Login functionality for mobile app.",1456160522,1456616133,1609675,5220965,"android,",1
+28,"Process the image and fine-tune it for better results.",1456160736,1456896435,,,"android,",1
+29,"Standard Navigation to populate amounts from an SMS",1456600960,1456643300,1567328,11071092,"android,solution_:_smsFeed,",2
+30,"Changing the keyboard type in the settings ",1456602849,1456608427,1577084,14361973,"android,enhancement,solution_manual_interface,",3
+31,"User POJO in android app",1456603604,1456616109,1609675,5220965,"android,",1
+32,"Expense POJO in android app",1456604159,1456616044,1609675,5220965,"android,",1
+33,"The clicking of decimal point is to disabled from the start ",1456609634,1456613052,1577084,14361973,"android,bug,solution_manual_interface,",3
+34,"Interface for communicating with backend.",1456615401,1456882537,1609675,5220965,"android,",1
+35,"Merging the Baseframework to master",1456615843,1456615853,,,"",0
+36,"errors in git commits",1456621081,1456621194,,,"",0
+37,"Introduce Loggers in each class",1456643006,1456892179,1609675,11071092,"android,enhancement,",2
+38,"Interface with the back-end",1456643459,1456971505,1609675,11071092,"android,",1
+39,"Update the report for March 1",1456971447,1456971451,1567299,,"",0
+40,"Description from SMSes",1457810033,1459194920,,11071092,"android,enhancement,solution_:_smsFeed,",3
+41,"Time for entering an expense item",1457810104,1458086640,1567302,5220965,"android,enhancement,",2
+42,"Expense description from voice input",1457810313,1459052416,1668507,,"android,enhancement,solution_:_voiceInput,",3
+43,"Tesseract not working on some phones",1459014109,1459913912,1668507,,"android,solution_:_imageScan,",2
+44,"Keystroke counts in expense descriptions",1459022307,1459150851,1668508,11071092,"android,enhancement,telemetry,",3
+45,"Paid APIs which can give us better accuracy than tesseract ",1459027541,1459982783,1668507,14164383,"enhancement,solution_:_imageScan,",2
+46,"Camera Quality in some phones not good enough for the Image API",1459036082,1459982814,1609675,,"bug,solution_:_imageScan,",2
+47,"Keystroke counts in expense amounts",1459044986,1459178854,1668507,,"enhancement,telemetry,",2
+48,"POJO for expense details",1459045256,1459150825,1668507,11071092,"enhancement,",1
+49,"Telemetry to capture the amount keystrokes.",1459142562,1459145473,1668508,5220965,"telemetry,",1
+50,"Send the keystrokes informations to backend server",1459144870,1459145514,1668508,5220965,"android,enhancement,web-application,",3
+51,"Import common-lang jar into android project configuration",1459145105,1459145487,1567302,5220965,"trivial,",1
+52,"Keeping track of the number of edits in the amount entry",1459164417,1459178834,1668508,,"telemetry,",1
+53,"Tracking the number of deletes in the amount entry ",1459164491,1459178830,1668508,,"telemetry,",1
+54,"Integrating desc from voice",1459193616,1459194880,1668507,11071092,"android,solution_:_voiceInput,",2
+55,"App crashes when only ""$5"" is entered via voice",1459489324,1460082415,1567302,14265368,"android,bug,",2
+56,"Information extraction from telemetry data",1459617283,1459979111,1668508,,"telemetry,",1

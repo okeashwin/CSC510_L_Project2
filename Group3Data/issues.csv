@@ -1,0 +1,87 @@
+id,name,createtime,closedtime,milestone_id,assignee_id,label_str,labels_count
+1,"Todo - parse the websites and create the JSON file",1455063442,1456165383,1573893,16072646,"Web App,",1
+2,"Create manifest file",1455065711,1455907375,1573934,5252257,"Plugin,",1
+3,"Develop the web page that displays the reviews by fetching it from the database",1455068354,1456651894,1573893,14265697,"Web App,",1
+4,"Figuring out the programming language for backend implementation - Python/ Java",1455764462,1455826675,1573893,16072646,"Web App,",1
+5,"Understanding the data format of the website - google ratings",1455764494,1456155585,1573893,16072646,"Web App,",1
+6,"API to crawl and fetch reviews from websites",1455764515,1456091898,1573893,16072646,"Web App,",1
+7,"Design the UI - creating and styling the web page",1455764536,1456893419,1573893,5252257,"enhancement,Web App,",2
+8,"Selecting the appropriate database - MySQL/ MongoDB/ SQLite",1455773895,1455826479,1573893,,"enhancement,",1
+9,"Define the schema for storing the reviews",1455773972,1456621168,1573893,5252257,"Web App,",1
+10,"Write javascript code to fetch reviews from multiple websites",1455774138,1456796172,1573934,5252257,"Plugin,",1
+11,"Collecting and organizing the resource",1455774191,1456734855,1576386,7080866,"Android,",1
+12,"Create sample csv file for review URL from different websites",1455775184,1455828423,1573893,14265697,"Web App,",1
+13,"Figuring out the programming language for front-end implementation - Ruby on Rails/ Django framework",1455822086,1456648047,1573893,14265697,"Web App,",1
+14,"API implementation for fetching the reviews",1455822188,1456634722,1576386,7080866,"Android,",1
+15,"UI - Search option ",1455822317,1460048748,1616971,7080866,"Android,wontfix,",2
+16,"Trip Advisor - learning the structure of the DOM ",1455822377,1456155603,1573893,16072646,"Web App,",1
+17,"Frame the JSON format to store the ratings and reviews",1455822491,1455898361,1573893,16072646,"Web App,",1
+18,"Create logo for plugin",1455825158,1456092324,1573934,5252257,"Plugin,",1
+19,"Styling the popup",1455825201,1456093999,1573934,5252257,"Plugin,",1
+20,"Choosing the Python API for crawling the websites",1455825520,1455898329,1573893,16072646,"Web App,",1
+21,"Javascript routine for popup",1455828230,1456873472,1573934,5252257,"Plugin,",1
+22,"Designing the app interface",1455828302,1456133094,1576386,7080866,"Android,",1
+23,"Write API for filtering the reviews",1455828318,1456735058,1576386,7080866,"Android,duplicate,",2
+24,"API implementation for updating the reviews from each website",1455828722,1456742491,1573893,14265697,"enhancement,",1
+25,"UI - Search functionality to filter the reviews",1455828824,1456796098,1573893,5252257,"enhancement,Web App,",2
+26,"Design the popup html ",1455828882,1456132201,1573934,5252257,"Plugin,",1
+27,"Creating the manifest file",1455828939,1456132771,1576386,7080866,"Android,",1
+28,"Python implementation to read the contents in csv file",1455891685,1456155566,1573893,16072646,"Web App,",1
+29,"Unable to crawl google ratings page",1455904135,1456647977,1573893,,"help wanted,",1
+30,"API implementation for storing the crawled data",1455926219,1456733522,1573893,14265697,"Web App,",1
+31,"Code to retrieve reviews from database",1455926247,1456651778,1573893,5252257,"Web App,",1
+32,"Create files - dimension.xml, strings.xml and style.xml",1455959071,1456634420,1576386,,"Android,",1
+33,"Testing the app in the emulator",1455959095,1456634210,1576386,7080866,"Android,",1
+34,"add foursquare links for reviews",1456091026,1456091227,1573893,14265697,"Android,Plugin,Web App,",3
+35,"Create the rails app for webscrapper frontend",1456124944,1456125075,1573893,14265697,"Web App,",1
+36,"data/json file location? ",1456133382,1456634163,1576386,,"Android,",1
+37,"Crawl the yelp for reviews",1456165412,1456410145,1573893,16072646,"Web App,",1
+38,"Fetch the reviews and scale from foursquare",1456165440,1456410181,1573893,16072646,"Web App,",1
+39,"Parse tripadvisor for the reviews of the restaurants",1456165469,1456410134,1573893,16072646,"Web App,",1
+40,"Some unnecessary symbols are appearing in the review text",1456411025,1456416619,1573893,16072646,"bug,Web App,",2
+41,"Foursquare does not have rating scale for individual reviews. How do we handle this?",1456413674,1456631840,1573893,16072646,"question,Web App,",2
+42,"Hosting the restaurants json file",1456520313,1456631853,1573893,16072646,"Web App,",1
+43,"Script to push json file to Amazon S3 bucket",1456620134,1456631818,1573893,16072646,"Web App,",1
+44,"Now that we have extracted the reviews from websites, how are we going to display it?",1456634368,1456735012,1576386,,"Android,enhancement,help wanted,question,",4
+45,"Script to migrate json data to rails sqlite db",1456640659,1456643213,1573893,14265697,"Web App,",1
+46,"Add image thumbnail to restaurant list index view",1456646451,1456646486,1573893,14265697,"Web App,",1
+47,"Update migration script to support thumbnail",1456646571,1456646729,1573893,14265697,"Web App,",1
+48,"Modify homepage to view Thumbnail",1456646655,1456651753,1573893,5252257,"Web App,",1
+49,"Fetching the url of the picture for each restaurant",1456666865,1456668385,1573893,16072646,"enhancement,Web App,",2
+50,"Updating the json structure to add a new field",1456666946,1456742301,1573893,16072646,"enhancement,Web App,",2
+51,"Star ratings getting loaded incorrectly before refresh",1456706887,1456735230,1573893,5252257,"bug,Web App,",2
+52,"Correctly calculate average weighted rating",1456706956,1456710260,1573893,14265697,"bug,Web App,",2
+53,"Load number of reviews to rails db",1456706991,1456709284,1573893,14265697,"enhancement,Web App,",2
+54,"Resize the thumbnail for restaurants ",1456733108,1456733128,1573893,14265697,"enhancement,Web App,",2
+55,"Correct Aggregate Calculation",1456742125,1456790293,1573934,5252257,"bug,Plugin,",2
+56,"Script to populate csv file with restaurant links",1456788756,1456842267,1573893,16072646,"Android,enhancement,Web App,",3
+57,"Pass context-script data to chrome popup",1456789070,1456893209,1573934,5252257,"enhancement,Plugin,",2
+58,"Collecting log for the web scraper solution",1456872910,1456877851,1616609,16072646,"enhancement,Web App,",2
+59,"Log tracking addition to plugin",1456873165,1456893127,1616609,5252257,"enhancement,Plugin,",2
+60,"Telemetry and log for android app",1456873425,1456877830,1616609,,"Android,enhancement,",2
+61,"Parsing negative reviews",1459402922,1459468270,1616971,16072646,"enhancement,Web App,",2
+62,"Parsing location attributes of restaurant",1459441308,1459541056,1616971,16072646,"enhancement,Web App,",2
+63,"Add negative reviews to reviews schema",1459457163,1459458050,1616971,14265697,"enhancement,Web App,",2
+64,"Parse negative reviews in controller",1459457201,1459459026,1616971,14265697,"enhancement,Web App,",2
+65,"Add book now functionality in webapp",1459457237,1460052857,1616971,14265697,"enhancement,Web App,",2
+66,"add negative reviews to app",1459457274,1459894336,1616971,7080866,"Android,enhancement,",2
+67,"add book now functionality to app",1459457300,1459894315,1616971,7080866,"Android,enhancement,",2
+68,"UI changes for negative reviews in webapp",1459457336,1459660969,1616971,5252257,"enhancement,Web App,",2
+69,"book now redirection",1459458534,1459894295,1688666,7080866,"Android,bad smell,",2
+70,"redirect book now to restaurant website",1459458580,1460052871,1616971,5252257,"enhancement,Web App,",2
+71,"adding button kind of clickable thing for plugin",1459458623,1459911113,1616971,5252257,"enhancement,Plugin,",2
+72,"Adding restaurant url for each website",1459462373,1459541037,1616971,16072646,"enhancement,Web App,",2
+73,"add restaurant url in schema",1459462623,1459490484,1616971,14265697,"enhancement,Web App,",2
+74,"update controller to support book now feature",1459462650,1459490949,1616971,14265697,"enhancement,Web App,",2
+75,"font size and styling",1459912999,1460052832,1688649,5252257,"enhancement,Web App,",2
+76,"background color change",1459913054,1460048802,1688649,,"Android,enhancement,",2
+77,"Implement user click count",1459973871,1460048788,1688649,,"Android,enhancement,",2
+78,"Implement session time duration ",1459973910,1460048711,1688649,5252257,"Android,enhancement,",2
+79," user click for webapp",1459974011,1460052807,1688649,5252257,"enhancement,Web App,",2
+80,"session time duration for webapp",1459974245,1460052790,1688649,5252257,"enhancement,Web App,",2
+81,"color scheme",1459997051,1460052772,1688649,5252257,"Web App,",1
+82,"color scheme for android app",1459997069,1460048617,1688649,7080866,"Android,",1
+83,"icon image changes",1459997220,1460048602,1688649,7080866,"Android,",1
+84,"Remove unwanted function from review controller in webapp",1460001326,1460052844,1688666,14265697,"bad smell,Web App,",2
+85,"Divide worker functionality into smaller methods",1460001384,1460048669,1688666,7080866,"Android,bad smell,",2
+86,"remove ambiguous comments",1460001474,1460052758,1688666,5252257,"bad smell,Plugin,",2

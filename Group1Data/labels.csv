@@ -1,0 +1,16 @@
+id,name
+0,bug
+1,duplicate
+2,enhancement
+3,question
+4,wontfix
+5,models
+6,web-application
+7,android
+8,"REST API"
+9,solution_:_smsFeed
+10,solution_:_imageScan
+11,solution_:_voiceInput
+12,solution_manual_interface
+13,telemetry
+14,trivial
