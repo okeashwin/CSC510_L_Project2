@@ -9,7 +9,7 @@ Objective of the project is to feed in data from other projects' GitHub reposito
   * Labels data
   * commit patterns
 
-#### Prerequisities:
+#### Prerequisites
   * Source in all the repositories for which the data needs to be collected in `repos.conf`
   * Add the `GitHub` auth token in `gitable.conf`. The file format should be the same as [ conf template ] (https://github.com/okeashwin/CSC510_L_Project2/blob/master/gitable.conf.sample)
   * Install `sqlite3` on the machine
